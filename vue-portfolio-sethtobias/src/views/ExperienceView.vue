@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    HomeView
+    ExperienceView
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import Footer from '../components/Footer.vue'
 import Spinner from '../components/Spinner.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'ExperienceView',
   components: {
     Spinner,
     Navbar,
