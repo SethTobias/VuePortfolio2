@@ -1,11 +1,24 @@
 <template>
-  <Navbar/>
-  <router-view/>
-  <Footer/>
+  <Navbar />
+  <router-view />
+  <Footer />
 </template>
 
-<style>
+<script>
+import Navbar from "../src/components/Navbar.vue";
+import Footer from "../src/components/Footer.vue";
+import Spinner from "../src/components/Spinner.vue";
 
+export default {
+  components: {
+    Navbar,
+    Spinner,
+    Footer,
+  },
+};
+</script>
+
+<style>
 body {
   background-color: var(--text);
 }
@@ -23,7 +36,6 @@ body {
 }
 
 #app {
-
 }
 
 nav {
