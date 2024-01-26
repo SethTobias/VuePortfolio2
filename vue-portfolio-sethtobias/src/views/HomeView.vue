@@ -233,6 +233,6 @@ export default {
   height: auto;
   max-height: 50px;
   text-align: center;
-}
 
+}
 </style>
