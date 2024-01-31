@@ -260,27 +260,49 @@
       </div>
     </div>
 
-    <a id="#movies">
+    <a id="movies">
       <h2>Movies:</h2>
     </a>
     <div class="movies-container">
-      <div class="img-span-row2-movies">
+      <p class="txt-movies">
+          As a child I lost track of the countless hours I spent immersing
+          myself in the world of movies. To say the my very persona was shaped
+          thanks to the numerous characters is far form an understatement.
+          Thanks to Stitch I have learnt to not allow what others think of us to
+          have an impact on our actions. Also that change is possible if we
+          welcome it. That coupled with my healthy obsession for romance films
+          drives my hobby of watching movies. As it has a very special place in
+          my heart.
+        </p>
         <img
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRSGiddPnpYREHWY2gJzCH2ZabQs4rGKHPSMf6BxAc6kwg67FDcohC2esNIxgtnm1gMkmmHnCv0D7y7d17KFZRqslcfRg=s1600"
-          alt=""
-        />
-      </div>
-      <div class="img-center-end-movies">
-        <img
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRNiBUENSJTBVeM7j6V1KaPDjl4sGayi0aS3-6UrxJNEgeRdeMDCRWHUph2_40OnS-vKw6aVf3OvPs9wOZJJKc3YRsD=s2560"
-          alt=""
-        />
-      </div>
-      <div class="img-start-end-movies">
-        <img
-          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ_q4I1JsqfNENSyp2TgR9H2XtCmv26dNHffpeHgzyCBOQ17NUcGri0DQ1uRJpFbcnDu2YbADAqBWB742GQR7MnQp-v=s2560"
-          alt=""
-        />
+              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ_q4I1JsqfNENSyp2TgR9H2XtCmv26dNHffpeHgzyCBOQ17NUcGri0DQ1uRJpFbcnDu2YbADAqBWB742GQR7MnQp-v=s2560"
+              class="stitch"
+            />
+       <img
+              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRNiBUENSJTBVeM7j6V1KaPDjl4sGayi0aS3-6UrxJNEgeRdeMDCRWHUph2_40OnS-vKw6aVf3OvPs9wOZJJKc3YRsD=s2560"
+              class="big"
+            />
+      <!-- <div class="watchlist">
+        <div class="img-span-row2-movies">
+          <img
+            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRSGiddPnpYREHWY2gJzCH2ZabQs4rGKHPSMf6BxAc6kwg67FDcohC2esNIxgtnm1gMkmmHnCv0D7y7d17KFZRqslcfRg=s1600"
+            alt=""
+          />
+        </div>
+        <div class="double-watchlist">
+          <div class="img-center-end-movies">
+            <img
+              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRNiBUENSJTBVeM7j6V1KaPDjl4sGayi0aS3-6UrxJNEgeRdeMDCRWHUph2_40OnS-vKw6aVf3OvPs9wOZJJKc3YRsD=s2560"
+              alt=""
+            />
+          </div>
+          <div class="img-start-end-movies">
+            <img
+              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ_q4I1JsqfNENSyp2TgR9H2XtCmv26dNHffpeHgzyCBOQ17NUcGri0DQ1uRJpFbcnDu2YbADAqBWB742GQR7MnQp-v=s2560"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
       <div class="txt-span-col2-movies">
         <p>
@@ -293,43 +315,68 @@
           drives my hobby of watching movies. As it has a very special place in
           my heart.
         </p>
+      </div> -->
+    </div>
+    <a id="reading">
+      <h2>Reading:</h2>
+    </a>
+
+    <div class="reading-container">
+      <p>
+        People often quite shocked when I tell them that reading is one of my
+        many hobbies. For myself though I would not have it any other way. I can
+        start at a book for hours and feel like no time has passed what so ever.
+        I enjoy the fact that simply words can create such a vivid picture in
+        ones mind without even being to see it. The world of literature is so
+        vast that you can lose yourself in countless books effortlessly. My
+        favourite books to read include Manga, Manhua and the occasional novel.
+      </p>
+
+      <h3>My Current Top Reads:</h3>
+      <div class="reads-container">
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTc6XDKc4qhmic5P2KFKhiy9V4EOPtLNdFBj-ZSh96m3KWqFh9deysNIiIxJ90wkqf9aa-8PiOZ0qPowqxWwaY40URscg=s1600"
+          class="r1"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS84jT_9I5iQA1X5Pv5BZN3BhE8NdjMDPflPUwJQ_Eil4Uv1S1x2DrHgbKUxH2zy2n4vgI338eUgG6FaWDIfIySQK6LAQ=s2560"
+          class="r2"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSbHRj9xplJR6dc7DHNgL0xXKKWkCGGGlacOB86rSlbXv1LhUUcq92U9ory6udRUUei2Azhl_WFfY2IpnjZmFu50bDPoA=s2560"
+          class="r3"
+        />
       </div>
     </div>
-  </div>
+    <a id="music">
+<h2>Music:</h2>
+    </a>
+<div class="music-container">
+<div class="music-text">
+<p>
+I always enjoyed listening to music and singing along to my favourite
+songs. As we all do. My love for music only really started when I
+began LISTENING to music. Yes there is a difference. It all started
+with my English teacher and her rant about how all things have a
+deeper meaning. This got me thinking about the meaning behind the
+songs I listened to. This is where my journey of creating an playlist
+of songs that had more than just a catchy tune to listen to.
+</p>
+</div>
+<iframe
+style="border-radius: 12px"
+src="https://open.spotify.com/embed/playlist/5gTIHWi7j89AHID4noBOW2?utm_source=generator"
+width="100%"
+height="352"
+frameBorder="0"
+allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+loading="lazy"
+></iframe>
+</div>
 
-  <a id="reading">
-    <h2>Reading:</h2>
-  </a>
-  <div class="reading-container">
-    <p>
-      People often quite shocked when I tell them that reading is one of my many
-      hobbies. For myself though I would not have it any other way. I can start
-      at a book for hours and feel like no time has passed what so ever. I enjoy
-      the fact that simply words can create such a vivid picture in ones mind
-      without even being to see it. The world of literature is so vast that you
-      can lose yourself in countless books effortlessly. My favourite books to
-      read include Manga, Manhua and the occasional novel.
-    </p>
-
-    <h3>My Current Top Reads:</h3>
-
-    <div class="reads-container">
-      <img
-        src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTc6XDKc4qhmic5P2KFKhiy9V4EOPtLNdFBj-ZSh96m3KWqFh9deysNIiIxJ90wkqf9aa-8PiOZ0qPowqxWwaY40URscg=s1600"
-        class="r1"
-      />
-      <img
-        src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS84jT_9I5iQA1X5Pv5BZN3BhE8NdjMDPflPUwJQ_Eil4Uv1S1x2DrHgbKUxH2zy2n4vgI338eUgG6FaWDIfIySQK6LAQ=s2560"
-        class="r2"
-      />
-      <img
-        src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSbHRj9xplJR6dc7DHNgL0xXKKWkCGGGlacOB86rSlbXv1LhUUcq92U9ory6udRUUei2Azhl_WFfY2IpnjZmFu50bDPoA=s2560"
-        class="r3"
-      />
-    </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "AboutView",
@@ -542,8 +589,7 @@ export default {
 .img-end-end img,
 .img-center-end img {
   height: auto;
-  max-width: 610px;
-  width: auto;
+  width: 610px;
   border: 5px ridge var(--secondary);
 }
 
@@ -571,93 +617,89 @@ export default {
   text-align: center;
 }
 
-.movies-main-container {
-  margin: 0 auto;
-  max-width: 1250px;
-  width: auto;
-  min-width: 250px;
-}
-
 h2 {
   text-align: center;
   font-size: 40px;
 }
 
-.movies-container {
-  display: grid;
-  grid: 1fr 1fr / repeat(3, 1fr);
-}
-
-.img-span-row2-movies {
-  grid-area: 1/3/3/4;
-}
-
-.img-span-row2-movies img {
-  height: auto;
-  max-width: 400px;
+.reading-container {
+  margin: 0 auto;
+  max-width: 1250px;
   min-width: 250px;
-  margin-bottom: 0;
 }
 
-.img-center-end-movies {
-  grid-area: 2/2/3/3;
-}
-
-.img-start-end-movies {
-  grid-area: 2/1/3/2;
-}
-
-.img-start-end-movies img,
-.img-center-end-movies img {
-  height: 300px;
-  max-width: 400px;
-  min-width: 250px;
-  margin-top: -7.5px;
-}
-
-.txt-span-col2-movies {
-  grid-area: 1/1/2/3;
+.reading-container h2 {
+  text-align: center;
   font-size: 30px;
 }
 
-.reading-main-container {
-margin: 0 auto;
-margin-top: 50px;
-width: 1200px;
+.reading-container h3 {
+  text-align: center;
+  font-size: 24px;
 }
 
-h2 {
-text-align: center;
-font-size: 3rem;
-}
-
-h3 {
-text-align: center;
-font-size: 1.9rem;
-}
-
-p {
-text-align: center;
-font-size: 1.6rem;
-}
-
-.reading-container {
-
+.reading-container p {
+  text-align: center;
+  font-size: 24px;
 }
 
 .reads-container {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  
 }
 
-.reads-container .r1, .reads-container .r2,.reads-container .r3 {
-max-height: 400px;
-min-height: 344px;
-max-width: 300px;
+.reads-container .r1,
+.reads-container .r2,
+.reads-container .r3 {
+  max-height: 400px;
+  min-height: 344px;
+  max-width: 300px;
+  min-width: 250px;
+  border: 5px outset var(--secondary);
+  box-shadow: var(--text) 10px 10px 10px;
+  margin: 10px 0;
+}
+
+.music-container {
+margin: 0 auto;
+max-width: 1250px;
 min-width: 250px;
-border: 5px outset var(--secondary);
-box-shadow: var(--text) 10px 10px 10px;
+display: flex;
+flex-flow: row wrap; 
+}
+
+.music-container h2 {
+text-align: center;
+font-size: 30px;
+}
+
+.music-text {
+font-size: 24px;
+text-align: center;
+}
+
+  .stitch,.big {
+    height: auto;
+    max-width: 600px;
+    min-width: 250px;
+    width: auto;
+    margin: 0 auto;
+  }
+ .txt-movies {
+  font-size:  30px;
+  text-align: center ;
+}
+
+.movies-container {
+  max-width: 1250px;
+  min-width: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 @media screen and (max-width: 300px) {
@@ -728,569 +770,36 @@ box-shadow: var(--text) 10px 10px 10px;
     max-width: 250px;
     width: auto;
   }
-  .img-end-end img,
-  .img-center-end img {
+  .stitch,.big {
     height: auto;
     max-width: 250px;
     width: auto;
+    margin: 0 auto;
   }
-}
-</style>
 
-<!-- <div class="about-main-content">
-<div class="about-main-content-grid">
-<h1>My Story</h1>
-<div class="about-img-container">
-</div>
-<div class="about-content-container">
-<h2>I am Seth Tobias</h2>
-<p>
-</p>
-</div>
-<div class="image-map-container">
-<div class="image-map-text">
-<h2>My Hobbies:</h2>
-<p>
-Bellow is an image map containing a few of my favourite hobbies to
-do in my free time. Consisting of Reading, watching Movies, Sport
-and listening to Music. Simply click the relevant item in the
-image to learn more!
-</p>
-</div>
-<div class="image-maps">
-<div class="image-map-desktop"> -->
-<!-- Image Map Generated by http://www.image-map.net/ -->
-<!-- <img
-src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSGtOQMI0a4bHB8PHScSiaQ0XFs61wA_hZwvq77ejGjAQO-XmVqluG9JILysFAe_5Hh95NJYyXUgwZHsU7D7dtqaBnBJg=s1600"
-usemap="#image-map"
-/>
+  .stitch {
+    order: 1;
+  }
+ .txt-movies {
+  font-size:  18px;
+  text-align: center ;
+  order: 2;
+}
 
-<map name="image-map">
-<router-link to="/music">
-<area
-target=""
-alt="music"
-title="music"
-coords="181,232,77,94"
-shape="rect"
-/>
-</router-link>
-<router-link to="/movies">
-<area
-target=""
-alt="movies"
-title="movies"
-coords="248,17,624,22,620,226,652,227,628,265,245,256,187,225,196,213,232,211"
-shape="poly"
-/>
-</router-link>
-<router-link to="/sport">
-<area
-target=""
-alt="hockey"
-title="hockey"
-coords="899,49,919,56,926,76,297,718,402,777,388,805,187,866,142,944,91,952,29,817,38,592,53,568,99,571,137,591,152,674,232,692,237,578,248,542,284,526,318,537,332,568,349,580"
-shape="poly"
-/>
-</router-link>
-<router-link to="/reading">
-<area
-target=""
-alt="reading"
-title="reading"
-coords="764,409,941,461,884,731,695,665"
-shape="poly"
-/>
-</router-link>
-</map>
-</div>
-<div class="image-map-ipad"> -->
-<!-- Image Map Generated by http://www.image-map.net/ -->
-<!-- <img
-src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSoQxi-3rCO739ECU3lSpHFdCqtfRowGUKgMEpT3q0RJtAg2F3H4ciL1I4stmbtljdVxYhTShFgi_S52j2GRH0jTW-hmg=s2560"
-usemap="#image-map"
-/>
-
-<map name="image-map">
-<router-link to="/music">
-<area
-target=""
-alt="music"
-title="music"
-coords="54,65,120,159"
-shape="rect"
-/>
-</router-link>
-<router-link to="/movies">
-<area
-target=""
-alt="movies"
-title="movies"
-coords="171,10,424,15,424,153,450,156,424,182,167,174,124,158,123,147,157,147"
-shape="poly"
-/>
-</router-link>
-<router-link to="/sport">
-<area
-target=""
-alt="hockey"
-title="hockey"
-coords="614,36,630,34,638,52,206,488,271,524,278,547,194,574,122,598,102,651,60,649,21,571,26,408,39,389,84,392,101,421,102,463,160,472,171,415,162,391,179,363,210,360,228,382,225,413"
-shape="poly"
-/>
-</router-link>
-<router-link to="/reading">
-<area
-target=""
-alt="reading"
-title="reading"
-coords="522,279,474,454,606,503,648,316"
-shape="poly"
-/>
-</router-link>
-</map>
-</div>
-<div class="image-map-mid"> -->
-<!-- Image Map Generated by http://www.image-map.net/ -->
-<!-- <img
-src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSiI8zOi3tAOt4vHdBAIjlHpAvChkHwUqk0bkIBc5mzSRdmP4paKsXzVMJEB5E_LT_qwQAFpvFyJmPs0aQzu9XlHedWhA=s2560"
-usemap="#image-map"
-/>
-
-<map name="image-map">
-<router-link to="/music">
-<area
-target=""
-alt="music"
-title="music"
-coords="26,29,54,73"
-shape="rect"
-/>
-</router-link>
-<router-link to="/movies">
-<area
-target=""
-alt="movies"
-title="movies"
-coords="55,65,73,66,77,5,196,6,195,69,208,71,196,82,85,80,61,75"
-shape="poly"
-/>
-</router-link>
-<router-link to="/sport">
-<area
-target=""
-alt="hockey"
-title="hockey"
-coords="28,176,42,187,47,213,71,219,83,205,75,177,85,163,99,167,106,185,283,15,291,16,294,24,95,224,125,244,121,253,55,273,43,298,28,297,10,252,10,191,14,179"
-shape="poly"
-/>
-</router-link>
-<router-link to="/reading">
-<area
-target=""
-alt="reading"
-title="reading"
-coords="218,207,241,127,296,145,277,229"
-shape="poly"
-/>
-</router-link>
-</map>
-</div>
-<div class="image-map-mobile"> -->
-<!-- Image Map Generated by http://www.image-map.net/ -->
-<!-- <img
-src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRIrudgbyHT7nzv5Rhg2izMAXbuwVPsF_G0HCjRSaDsuARnpqH8Y9AD2yVcLUkMCmPULxZjmWI9DNJilUPwhT-SUgwR=s2560"
-usemap="#image-map"
-/>
-
-<map name="image-map">
-<router-link to="/music">
-<area
-target=""
-alt="music"
-title="music"
-coords="25,26,53,69"
-shape="rect"
-/>
-</router-link>
-<router-link to="/movies">
-<area
-target=""
-alt="movies"
-title="movies"
-coords="122,5,181,6,181,63,196,66,182,76,73,75,54,67,69,59,69,33,71,3"
-shape="poly"
-/>
-</router-link>
-<router-link to="/sport">
-<area
-target=""
-alt="hockey"
-title="hockey"
-coords="19,166,36,171,44,197,65,204,77,189,68,164,80,155,93,159,101,175,264,13,270,14,273,19,90,211,118,231,113,238,52,253,41,274,24,279,7,237,9,178"
-shape="poly"
-/>
-</router-link>
-<router-link to="/reading">
-<area
-target=""
-alt="reading"
-title="reading"
-coords="221,117,202,195,261,216,278,135"
-shape="poly"
-/>
-</router-link>
-</map>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sport-main-container">
-</div> -->
-<!-- </div> -->
-<!-- <Footer />
-</template>
-
-<!-- <style scoped>
-:root {
---text: #002e28;
---background: #e0fffa;
---primary: #008a70;
---secondary: #5cd1ff;
---accent: #007cf0;
-}
-.sport-main-container {
-margin: 0 auto;
-margin-top: 50px;
-width: 1200px;
-}
-h2 {
-text-align: center;
-font-size: 3rem;
-}
-.sport-container-grid {
-display: grid;
-grid: 1fr 1fr / repeat(3, 1fr);
-/* gap: 5px 10px; */
-}
-.sport-container-grid img {
-border: 3px solid var(--text);
-}
-.img-span-row2 {
-grid-area: 1/1/3/2;
-}
-.img-span-row2 img {
-height: 600px;
-width: 300px;
-}
-.img-center-end {
-grid-area: 1/2/2/3;
-}
-.img-end-end {
-grid-area: 2/3/3/4;
+.big {
+  order: 3;
 }
 .img-end-end img,
 .img-center-end img {
-height: 300px;
-width: 450px;
-}
-.img-center-end img {
-border-left: none;
-}
+  height: auto;
+  width: 250px;
 
-.txt-end-start {
-grid-area: 1/3/2/4;
-text-align: end;
-font-size: 1.7rem;
-line-height: 1.7rem;
-}
-.txt-center-end {
-grid-area: 2/2/3/3;
-text-align: center;
-font-size: 1.7rem;
-line-height: 1.7rem;
-}
-</style>
-
-<div class="music-main-container">
-<h2>Music:</h2>
-<div class="music-container-grid">
-<div class="music-text">
-<p>
-I always enjoyed listening to music and singing along to my favourite
-songs. As we all do. My love for music only really started when I
-began LISTENING to music. Yes there is a difference. It all started
-with my English teacher and her rant about how all things have a
-deeper meaning. This got me thinking about the meaning behind the
-songs I listened to. This is where my journey of creating an playlist
-of songs that had more than just a catchy tune to listen to.
-</p>
-</div>
-<div class="music-iframe">
-<iframe
-style="border-radius: 12px"
-src="https://open.spotify.com/embed/playlist/5gTIHWi7j89AHID4noBOW2?utm_source=generator"
-width="100%"
-height="352"
-frameBorder="0"
-allowfullscreen=""
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-loading="lazy"
-></iframe>
-</div>
-</div>
-</div> -->
-<!-- <Footer />
-</template> -->
-<!-- <script>
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
-export default {
-name: "MusicView",
-components: {
-Navbar,
-Footer,
-},
-};
-</script> -->
-<!-- <style scoped>
-:root {
---text: #002e28;
---background: #e0fffa;
---primary: #008a70;
---secondary: #5cd1ff;
---accent: #007cf0;
-}
-
-.music-main-container {
-margin: 0 auto;
-margin-top: 50px;
-width: 1200px;
-}
-
-h2 {
-text-align: center;
-font-size: 3rem;
-}
-
-.music-container-grid {
-display: grid;
-grid: "txt iframe" 1fr / 1fr 1fr;
-gap: 10px;
-}
-.music-text {
-grid-area: txt;
-font-size: 1.7rem;
-line-height: 2.3rem;
-}
-.music-iframe {
-grid-area: iframe;
-}
-</style> -->
-
-<!-- <Footer />
-</template>
-
-<script>
-import { mapState, mapActions } from "vuex";
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
-
-export default {
-name: "AboutView",
-components: {
-Navbar,
-Footer,
-},
-computed: {
-...mapState(["jsonData"]),
-},
-methods: {
-...mapActions(["fetchJsonData"]),
-fetchData() {
-this.fetchJsonData();
-},
-},
-mounted() {
-// Fetch data when the view is first loaded
-this.fetchData();
-},
-};
-</script> -->
-
-<!-- <style scoped>
-:root {
---text: #002e28;
---background: #e0fffa;
---primary: #008a70;
---secondary: #5cd1ff;
---accent: #007cf0;
-}
-
-.about-main-content {
-margin-top: 50px;
-margin: 0 auto;
-margin-top: 50px;
-width: 1200px;
-}
-
-.about-main-content-grid {
-width: 80%;
-margin: 0 auto;
-display: grid;
-grid: 100px max-content 1fr / 1fr 2fr;
-gap: 0px 15px;
-}
-
-h1 {
-text-align: center;
-grid-area: 1/1/1/3;
-font-size: 2.75rem;
-}
-
-.about-img-container {
-grid-area: 2/1/2/1;
-}
-
-.about-img-container img {
-height: 600px;
-border: 3px solid var(--primary);
-}
-
-.about-content-container {
-grid-area: 2/2/2/3;
-text-align: right;
-}
-
-.about-content-container h2 {
-font-size: 2rem;
-line-height: 0px;
-}
-
-.about-content-container p {
-font-size: 1.8rem;
-line-height: 1.7rem;
-}
-
-.image-map-container {
-margin: auto;
-grid-area: 3/1/3/4;
-display: flex;
-flex-flow: row wrap;
-align-content: center;
-justify-content: center;
-}
-
-.image-map-text h2 {
-text-align: center;
-font-size: 3rem;
-}
-
-.image-map-text p {
-text-align: center;
-font-size: 1.9rem;
-}
-
-.image-map-container img {
-border: 10px ridge var(--text);
-}
-
-.image-map-ipad {
-display: none;
-}
-
-.image-map-mid {
-display: none;
-}
-.image-map-mobile {
-display: none;
-}
-
-@media screen and (width < 300px) {
-.image-map-mobile {
-display: block;
-}
-.image-map-mid {
-display: none;
-}
-.image-map-ipad {
-display: none;
-}
-.image-map-desktop {
-display: none;
-}
-}
-
-@media screen and (299px < width < 730px) {
-.image-map-mobile {
-display: none;
-}
-.image-map-mid {
-display: block;
-}
-.image-map-ipad {
-display: none;
-}
-.image-map-desktop {
-display: none;
-}
-}
-
-@media screen and (730px < width < 1100px) {
-.image-map-mobile {
-display: none;
-}
-.image-map-mid {
-display: none;
-}
-.image-map-ipad {
-display: block;
-}
-.image-map-desktop {
-display: none;
-}
-}
-
-@media screen and (width > 1100px) {
-.image-map-mobile {
-display: none;
-}
-.image-map-mid {
-display: none;
-}
-.image-map-ipad {
-display: none;
-}
-.image-map-desktop {
-display: block;
 }
 }
 </style>
+<!--
 
-<!-- <Footer />
-</template>
-<script>
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
-export default {
-name: "MusicView",
-components: {
-Navbar,
-Footer,
-},
-}; -->
-<!-- </script>
-<style scoped>
-:root {
---text: #002e28;
---background: #e0fffa;
---primary: #008a70;
---secondary: #5cd1ff;
---accent: #007cf0;
-}
-
-</styl> -->
+ -->
 
 <!-- <div class="main-container">
 <div class="main-content">
