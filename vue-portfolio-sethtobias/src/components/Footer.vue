@@ -40,12 +40,15 @@ export default {
 footer {
   display: flex;
   justify-content: space-around;
+
   width: 100%;
   height: fit-content;
   background-color: var(--background);
   position: absolute;
   left: 0;
+  right: 0;
   margin-top: 15px;
+
 }
 
 p {
@@ -71,4 +74,6 @@ p {
   color: var(--text);
   
 }
+
+
 </style>
