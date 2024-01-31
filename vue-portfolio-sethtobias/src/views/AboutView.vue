@@ -380,10 +380,6 @@ loading="lazy"
 
 <script>
 export default {
-  name: "AboutView",
-};
-
-export default {
   name: 'AboutView'
 }
 </script>
