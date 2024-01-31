@@ -7,12 +7,10 @@
 <script>
 import Navbar from "../src/components/Navbar.vue";
 import Footer from "../src/components/Footer.vue";
-import Spinner from "../src/components/Spinner.vue";
 
 export default {
   components: {
     Navbar,
-    Spinner,
     Footer,
   },
 };
