@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    ProjectsView
+    <center>
+
+    Error 404 Not Found
+    </center>
   </div>
 </template>
 

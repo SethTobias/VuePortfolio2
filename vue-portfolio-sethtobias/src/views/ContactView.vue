@@ -112,6 +112,7 @@ display: flex;
 justify-content: space-around;
 align-content: center;
 padding: 10px 0;
+
 }
 
 p {
@@ -121,9 +122,10 @@ min-width: 250px;
 
 form .personal-form-container,
 form .enterprise-form-container {
-max-width: 1250px;
-min-width: 250px;
+  width: 1250px;
 margin: 0 auto;
+border: 5px solid var(--secondary);
+padding: 5px;
 }
 
 input {
@@ -178,14 +180,85 @@ transition: all 0.2s ease-in-out;
 }
 
 @media screen and (width < 300px) {
- .personal-form,
-.enterprise-form {
-width: 300px;
-border-radius: 50px;
+  body {
+background-color: var(--text);
+color: var(--secondary);
+overflow-x: hidden;
+}
+
+.main-container {
+width: 250px;
+height: auto;
 margin: 0 auto;
 display: flex;
+flex-flow: column wrap;
+text-align: center; 
+}
+
+.personal-form,
+.enterprise-form {
+background-color: var(--primary);
+border-radius: 25px;
+width: 250px;
 flex-direction: column;
-align-items: center;
+padding: 8px 0;
+}
+
+p {
+width: 250px;
+}
+
+form .personal-form-container,
+form .enterprise-form-container {
+width: 250px;
+margin: 0 auto;
+}
+
+input {
+width: 200px;
+height: 80px;
+background-color: var(--secondary);
+border: 5px solid var(--text);
+border-radius: 50px;
+margin: 2px auto;
+}
+
+[value="Submit"] {
+max-width: 250px;
+width: 250px;
+min-width: 200px;
+height: 80px;
+background-color: var(--secondary);
+border: 5px solid var(--text);
+border-radius: 20px;
+}
+
+h2,
+h3 {
+font-size: 20px;
+}
+
+h4,
+p {
+font-size: 18px;
+}
+
+.contact-social-container {
+
+width: 250px;
+height: auto;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+}
+
+.contact-social-container i {
+color: var(--secondary);
+transform: scale(.5);
+}
+
+.contact-social-container i:hover {
+transform: scale(.9);
 }
 }
 </style>

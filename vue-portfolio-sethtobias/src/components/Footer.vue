@@ -3,13 +3,13 @@
     <p>Developed by Seth Tobias</p>
     <p>Copy Rights Reserved</p>
     <p>
-      <span class="currentYear">{{ getCurrentYear() }}</span>
-    </p>
     <div class="end-icons">
+      <span class="currentYear">{{ getCurrentYear() }}</span>
       <i class="fa-brands fa-github fa-2xl"></i>
       <i class="fa-brands fa-linkedin fa-2xl"></i>
       <i class="fa-solid fa-fire fa-2xl"></i>
     </div>
+    </p>
   </footer>
 </template>
 
@@ -40,14 +40,13 @@ export default {
 footer {
   display: flex;
   justify-content: space-around;
-  max-width: 1250px;
-  min-width: 300px;
+  width: 100%;
   height: fit-content;
   background-color: var(--background);
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 15px;
+  margin-top: 100px;;
 }
 
 p {
@@ -58,7 +57,6 @@ p {
   flex-flow: column;
   align-content: center;
   text-align: center;
-  line-height: 0rem;
 }
 
 .end-icons {
@@ -67,11 +65,37 @@ p {
   display: flex;
   flex-flow: row;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   width: 20%;
   color: var(--text);
 }
 
+@media screen and (width < 301px) {
+  footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 8px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  text-align: center;
+}
+
+.currentYear {
+  transform: scale(1);
+}
+
+.end-icons {
+  transform: scale(.6);
+  width: 10%;
+}
+
+}
 
 </style>

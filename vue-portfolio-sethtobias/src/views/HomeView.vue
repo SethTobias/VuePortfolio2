@@ -13,7 +13,7 @@ class="intro fluid"
 <p>Based in Tableview, CapeTown.</p>
 </div>
 </div>
-<div class="sub-container">
+<!-- <div class="sub-container">
 <div class="recent-container">
 <h1>
 My Recent Project:
@@ -46,7 +46,7 @@ class="fluid cv"/>
 </div>
 </div>
 </div>
-</div>
+</div> -->
 </div>
 </template>
 <script>
@@ -55,16 +55,6 @@ name: 'HomeView'
 }
 </script>
 <style scoped>
-
-/* @media screen and (width > 300px) {
-.main-container {
-margin: auto;
-background-color: var(--accent);
-}
-.intro-content {
-font-size: 40px;
-}
-} */
 :root {
 --text: #002e28;
 --background: #e0fffa;
@@ -82,6 +72,7 @@ margin: 0 auto;
 display: flex;
 flex-flow: row wrap;
 justify-content: space-between;
+margin: 0 auto;
 }
 .intro.fluid {
 max-width: 500px;
@@ -95,10 +86,15 @@ text-align: center;
 font-size: 50px;
 color: var(--secondary);
 }
-.intro-content p {
-line-height: 0;
+
+@media screen and (width < 300px) {
+.intro-content {
+font-size: 18px;
+margin: 0 auto;
+text-align: center;
 }
-.sub-container {
+}
+/* .sub-container {
 min-width: 250px;
 width: auto;
 max-width: 1250px;
@@ -225,5 +221,5 @@ height: auto;
 max-height: 50px;
 text-align: center;
 margin: 5px 40px;
-}
+} */
 </style>

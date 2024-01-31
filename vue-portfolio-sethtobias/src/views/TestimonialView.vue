@@ -1,4 +1,5 @@
 <template>
+
   <div class="testimonial-container">
 
 <div class="nav-container">
@@ -245,7 +246,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+* {
+  color: var(--text);
+}
 .carousel-main-container {
   max-width: 1000px;
 position: relative;
@@ -310,11 +314,9 @@ min-width: 250px;
 --accent: #007cf0;
 }
 
-.testimonial-main-container {
+.testimonial-container {
 margin: 0 auto;
-margin-top: 50px;
-max-width: 1250px;
-min-width: 250px;
+width: 1250px;
 }
 
 h2 {
@@ -430,28 +432,143 @@ padding: 0 25px;
 display: block;
 }
 
-/* width
-::-webkit-scrollbar {
-width: 5px;
-} */
-
-/* Track
-::-webkit-scrollbar-track {
-box-shadow: inset 0 0 5px var(--text);
-border-radius: 10px;
-} */
-
-/* Handle
-::-webkit-scrollbar-thumb {
-background: var(--text);
-border-radius: 10px;
-} */
-
-@media screen and (width<300px) {
+@media screen and (width < 301px) {
+  .carousel-main-container {
+  width: 300px;
+position: relative;
+margin: 0 auto;
 }
+.carousel-item {
+  display: none;
+}
+.carousel-item-indicators {
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+user-select: none;
+}
+.carousel-item-caption {
+  color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+text-align: center;
+}
+.carousel-item-indicator.previous,
+.carousel-item-indicator.next {
+  cursor: pointer;
+z-index: 1;
+align-content: center;
+}
+.carousel-item-index {
+  position: absolute;
+top: 0;
+left: 0;
+}
+
+.nav-container {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.link-items-testimonial.two {
+display: none;
+}
+.nav-link {
+margin: 0 auto;
+display: flex;
+align-content: center;
+justify-content: space-between;
+width: 250px;
+}
+
+
 
 .testimonial-container {
-width: 250px;
-margin: 0 auto
+margin: 0 auto;
+width: 300px;
 }
+
+h2 {
+font-size: 20px;
+text-align: center;
+}
+
+
+.testimonial-card {
+background-color: var(--secondary);
+height: fit-content;
+width: fit-content;
+border-radius: 20px;
+border: 5px solid var(--accent);
+margin: 10px auto;
+justify-content: center;
+}
+.link-items-testimonial.one .testimonial-items1,.link-items-testimonial.two .testimonial-items2 {
+/* grid-area: 1/1/2/2; */
+width: 300px;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
+
+.container-grid {
+height: 400px;
+width: 250px;
+display: grid;
+grid: "img" 75% "description" 25% / 1fr;
+}
+
+.testimonial-items1 .container-grid:hover,.testimonial-items2 .container-grid:hover {
+animation: cardExpand 1s forwards;
+}
+
+@keyframes cardExpand {
+0% {
+grid: "img" 75% "description" 25% / 1fr;
+}
+
+100% {
+grid: "img" 0% "description" 100% / 1fr;
+}
+}
+
+.img-container {
+grid-area: img;
+}
+
+.img-container img {
+width: 100%;
+height: 100%;
+}
+
+.testimonial-items1 .description,.testimonial-items2 .description {
+font-size: 16px;
+}
+
+.description-expanded {
+text-align: center;
+padding: 0 10px;
+font-size: 16px;
+}
+
+.testimonial-items2 {
+flex-flow: column;
+justify-content: space-evenly;
+margin: 10px auto;
+}
+
+
+.testimonial-items2 .description {
+padding: 0 10px;
+}
+
+.testimonial-items2 .description-expanded {
+display: block;
+}
+}
+
+
 </style>

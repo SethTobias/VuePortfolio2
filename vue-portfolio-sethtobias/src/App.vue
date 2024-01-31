@@ -29,13 +29,6 @@ body {
   --accent: #007cf0;
 }
 
-.main-container {
-  width: 1250px;
-}
-
-#app {
-}
-
 nav {
   padding: 30px;
 }
@@ -52,5 +45,9 @@ nav a.router-link-exact-active {
 .fluid {
   width: 100%;
   height: auto;
+}
+
+* {
+  color: var(--secondary);
 }
 </style>
