@@ -393,6 +393,11 @@ export default {
   --accent: #007cf0;
 }
 
+* {
+
+  color: var(--secondary);
+}
+
 .main-container {
   margin: 0 auto;
   max-width: 1250px;
@@ -423,11 +428,13 @@ export default {
 .main-container h1 {
   text-align: center;
   font-size: 50px;
+  color: var(--secondary);
 }
 
 .main-container h2 {
   text-align: center;
   font-size: 40px;
+  color: var(--secondary);
 }
 
 .fluid {
@@ -447,9 +454,10 @@ export default {
   margin: 0 auto;
 }
 
-.story-content h2 {
+.story-content h2,.story-content h3 {
   font-size: 40px;
   margin-top: 0;
+  color: var(--secondary);
 }
 
 .story-content p {

@@ -4,7 +4,7 @@
       <div class="nav-icon">
         <router-link to="/"
           ><i class="fa-brands fa-vuejs fa-2xl" style="color: var(--text)"></i
-        ></router-link>
+        ></router-link> 
       </div>
       <div class="nav-link">
         <div class="carousel-item-indicator previous" @click="nextItem(-1)">
@@ -93,9 +93,7 @@ nav {
   margin-bottom: 25px;
 }
 .nav-container {
-  display: grid;
-  grid: "a b c" / 1fr 2fr 1fr;
-  gap: 4rem;
+  display: flex;
   height: 10vh;
   background-color: var(--background);
   position: fixed;
@@ -104,26 +102,14 @@ nav {
   width: 100%;
 }
 
-/* @media screen and (width < 300px) {
-nav a {
-font-size: 10px;
-grid: "a b c" / 1fr 1fr 1fr;
-}
-} */
 .nav-icon {
-  grid-area: a;
   margin: auto;
 }
 .nav-link {
-  grid-area: b;
   align-self: center;
   display: flex;
 }
-.nav-link-grid {
-  position: relative;
-  margin: 0 auto;
-}
-.link-items {
+.link-items.two{
   display: none;
 }
 
@@ -132,7 +118,6 @@ grid: "a b c" / 1fr 1fr 1fr;
   margin: 0 30px;
 }
 .nav-settings {
-  grid-area: c;
   margin: auto;
 }
 .nav-settings-grid {
@@ -167,14 +152,60 @@ nav a.router-link-exact-active {
   color: var(--secondary);
 }
 
-.fluid {
-  width: 100%;
-  height: auto;
-}
-
 .carousel-item-indicator.previous,
 .carousel-item-indicator.next {
   cursor: pointer;
   align-self: center;
+}
+
+@media screen and (width < 301px) {
+  nav {
+  margin-bottom: 25px;
+}
+.nav-container {
+  max-width: 300px;
+  width: 100%;
+}
+
+.nav-icon {
+  margin: auto 0;
+  justify-self: end;
+  transform: scale(.5);
+}
+.nav-link {
+  align-self: center;
+  justify-self: start;
+  display: flex;
+  transform: scale(.8);
+}
+.link-items.two{
+  display: none;
+}
+
+.link-items.one a,
+.link-items.two a {
+  margin: 0 0.5px;
+}
+.nav-settings {
+  margin: auto;
+  display: none;
+}
+
+
+
+.nav-settings-grid i:hover {
+  cursor: pointer;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+}
 }
 </style>
