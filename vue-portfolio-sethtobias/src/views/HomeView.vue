@@ -79,7 +79,11 @@ export default {
 }
 .intro.fluid {
   max-width: 400px;
-  border: 5px solid var(--secondary);
+  border: 10px groove var(--text);
+}
+.intro.fluid:hover {
+  max-width: 400px;
+  border: 10px ridge var(--secondary);
 }
 .intro-content {
   display: flex;

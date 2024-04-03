@@ -5,9 +5,9 @@
     <p>
     <div class="end-icons">
       <span class="currentYear">{{ getCurrentYear() }}</span>
-      <i class="fa-brands fa-github fa-2xl"></i>
+      <!-- <i class="fa-brands fa-github fa-2xl"></i>
       <i class="fa-brands fa-linkedin fa-2xl"></i>
-      <i class="fa-solid fa-fire fa-2xl"></i>
+      <i class="fa-solid fa-fire fa-2xl"></i> -->
     </div>
     </p>
   </footer>
