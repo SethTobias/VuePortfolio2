@@ -9,17 +9,15 @@
       <div class="story-content">
         <h2>I am Seth Tobias.</h2>
         <p>
-          I am a 19-year-old aspiring Full-stack Web Developer. My journey
-          started in 2020 when I first came across coding. I started with the
-          fundamentals of HTML. I however abruptly stopped as my academics at
-          the time were more important to me. I picked up where I left off
-          earlier this year, as I matriculated in 2022 I found myself having a
-          lot more free time. Through my efforts, I managed to have a basic
-          understanding of HTML and CSS. In the meantime, while I was doing my
-          studies I scoured the internet for courses on Web Development. Thanks
-          to this I now find myself a part of the Life Choices Coding Academy.
-          My journey in learning Web Development started at this point. I now
-          find myself being able to create my very own Vue.js Portfolio.
+          I was born on the 27th of May 2004, and I am currently
+          {{ getCurrentAge() }} years old. Proficient in both English and
+          Afrikaans, I possess strong communication skills in both languages.
+          Following the completion of my six-month journey at Life Choices
+          Academy, my passion and dedication for coding have intensified. I am
+          now highly motivated to excel within the ICT industry, embarking on a
+          new role as an Intern at LS Studios. This opportunity allows me to
+          channel my skills and knowledge towards achieving significant
+          milestones in my career.
         </p>
       </div>
     </div>
@@ -327,11 +325,12 @@
       </div>
     </div>
     <a id="music">
-      <h2>Music:</h2>
+      <h2>Music & Gaming:</h2>
     </a>
     <div class="music-container">
-      <div class="music-text">
-        <p>
+      <div class="music">
+        <h3>Music:</h3>
+        <p class="music txt">
           I always enjoyed listening to music and singing along to my favourite
           songs. As we all do. My love for music only really started when I
           began LISTENING to music. Yes there is a difference. It all started
@@ -340,16 +339,44 @@
           songs I listened to. This is where my journey of creating an playlist
           of songs that had more than just a catchy tune to listen to.
         </p>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/5gTIHWi7j89AHID4noBOW2?utm_source=generator"
+          width="95%"
+          height="352"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
-      <iframe
-        src="https://open.spotify.com/embed/playlist/5gTIHWi7j89AHID4noBOW2?utm_source=generator"
-        width="95%"
-        height="352"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
+      <div class="gaming-container">
+        <h3>Gaming:</h3>
+        <p class="gaming txt">
+          Gaming, for me, was a hobby I really enjoyed, as it allowed me to
+          escape into a whole new world where there were no restrictions
+          whatsoever. As the player, I could achieve feats I could never even
+          begin to imagine doing myself. However, I became consumed in this
+          other world where I could do what I wanted. This sense of freedom was
+          something new to me and was very welcomed. I became where I spent the
+          majority of my time. Though upon learning how games were made, I was
+          left stunned. My ambition to learn coding then started as this was my
+          own way to create the very world I wanted. Through this journey, I
+          have come across many languages and the various uses for each
+          language. My love for gaming never stopped, though, and to this day, I
+          still play the occasional game. Even having picked up a few games to
+          sharpen my CSS skills such as
+          <a href="https://mastery.games/flexboxzombies/" target="blank"
+            >Flexbox Zombies</a
+          >
+          and
+          <a
+            href="https://codingfantasy.com/games/css-grid-attack/play"
+            target="blank"
+            >Grid Attack</a
+          >
+          . Which teach the basics go Flexbox and Grid respectively.
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -357,6 +384,16 @@
 <script>
 export default {
   name: "AboutView",
+  methods: {
+    getCurrentAge() {
+      const today = new Date();
+      const birthday = new Date("2004-05-27");
+      const currentAge = ` ${Math.floor(
+        (today - birthday) / (1000 * 60 * 60 * 24) / 365
+      )} `;
+      return currentAge;
+    },
+  },
 };
 </script>
 
@@ -420,6 +457,8 @@ export default {
 .story.fluid {
   max-width: 600px;
   min-width: 250px;
+  max-height: 650px;
+  height: auto;
   border: 10px groove var(--text);
   margin: 0 auto;
 }
@@ -430,6 +469,9 @@ export default {
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
 }
 
 .story-content h2,
@@ -441,7 +483,6 @@ export default {
 
 .story-content p {
   font-size: 30px;
-  line-height: 1.4;
 }
 
 .image-map-container {
@@ -577,7 +618,7 @@ export default {
   place-content: center;
 }
 
-:is(.img-center-end,.img-end-end) img {
+:is(.img-center-end, .img-end-end) img {
   border: 10px groove var(--text);
 }
 :is(.img-center-end) img {
@@ -586,7 +627,7 @@ export default {
 :is(.img-end-end) img {
   width: 350px;
 }
-:is(.img-center-end,.img-end-end) img:hover {
+:is(.img-center-end, .img-end-end) img:hover {
   border-color: var(--secondary);
 }
 .txt-end-start {
@@ -671,9 +712,25 @@ h2 {
   max-width: 1250px;
   min-width: 250px;
   display: flex;
+  place-content: center space-evenly;
   flex-flow: row wrap;
+  text-align: center;
 }
 
+:is(.music,.gaming-container) {
+  width: 600px;
+}
+
+.gaming-container{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+
+.gaming-container h3 {
+  place-self:  center start;
+}
 .music-container h2 {
   text-align: center;
   font-size: 30px;
@@ -766,7 +823,7 @@ iframe:hover {
     order: 5;
   }
 
-  :is(.img-center-end,.img-end-end) img {
+  :is(.img-center-end, .img-end-end) img {
     width: 250px;
   }
 
@@ -811,4 +868,5 @@ iframe:hover {
     width: 250px;
   }
 }
+
 </style>

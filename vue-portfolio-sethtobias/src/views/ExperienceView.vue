@@ -2,7 +2,7 @@
   <h2>Education & Experience:</h2>
   <div class="experience-container">
     <div class="education">
-          <h3>Education (2018-2022)</h3>
+      <h3>Education (2018-2022)</h3>
       <div class="experience row1">
         <img
           src="https://i.ibb.co/KKp2qLv/matric-01.jpg"
@@ -29,10 +29,10 @@
           </div>
         </div>
       </div>
-          <h3>Life Choices Academey (September 2023- March 2024)</h3>
+      <h3>Life Choices Academey (September 2023- March 2024)</h3>
       <div class="experience row1">
         <div class="experience-education">
-          <p style="width: 600px;">
+          <p style="width: 600px">
             I had the privilege to participate in a rigorous six-month
             Full-Stack Web Development Course at Life Choices Academy. Over the
             duration of the program, the initial three months were dedicated to
@@ -41,11 +41,11 @@
             HTML, CSS, and JavaScript. This phase provided a solid groundwork
             for my journey as a Web Developer. Subsequently, the latter half of
             the course focused on advanced topics, including database management
-            utilizing SQL. Moreover, I expanded my
-            repertoire by delving into technologies such as Vue.js
-            and Node.js. This comprehensive curriculum not only broadened my
-            technical expertise but also equipped me with the versatility to
-            adapt to dynamic industry demands.
+            utilizing SQL. Moreover, I expanded my repertoire by delving into
+            technologies such as Vue.js and Node.js. This comprehensive
+            curriculum not only broadened my technical expertise but also
+            equipped me with the versatility to adapt to dynamic industry
+            demands.
           </p>
         </div>
         <img
@@ -56,20 +56,50 @@
     </div>
     <h3>Work Experience:</h3>
     <div class="work-experience">
-      <div class="txt">
-        <h4>LC Studios: (April 2024-Current)</h4>
-        <p>
-          Having completed an intensive six-month Full-stack Web Development
-          course, equipping me with comprehensive skills in both front-end and
-          back-end web development. Building upon this foundation, I have
-          embarked on a career journey as a Web Developer Intern at LC Studios.
-          This role allows me to apply my expertise in web development within a
-          professional environment, further honing my abilities and contributing
-          to meaningful projects under mentorship.
-        </p>
+      <h4>LC Studios: (April 2024-Current)</h4>
+      <div class="work-experience-container">
+        <div class="txt">
+          <p style="width: 600px">
+            Having completed an intensive six-month Full-stack Web Development
+            course, equipping me with comprehensive skills in both front-end and
+            back-end web development. Building upon this foundation, I have
+            embarked on a career journey as a Web Developer Intern at LC
+            Studios. This role allows me to apply my expertise in web
+            development within a professional environment, further honing my
+            abilities and contributing to meaningful projects under mentorship.
+          </p>
+        </div>
+        <div class="img-container" style="margin: auto 0">
+          <img src="https://i.ibb.co/5Y7ptL5/lc-studio.jpg" class="studio" />
+        </div>
       </div>
-      <div class="img-container">
-        <img src="https://i.ibb.co/5Y7ptL5/lc-studio.jpg" />
+    </div>
+    <h3>Skills:</h3>
+    <div class="skills">
+      <div class="soft">
+        <h4>Soft Skills:</h4>
+        <ul style="list-style: none; margin: 0; padding: 0">
+          <li>Collaboration</li>
+          <li>Communication</li>
+          <li>Problem-Solving</li>
+          <li>Creative Thinking</li>
+          <li>Analytical Thinking</li>
+        </ul>
+      </div>
+      <img src="https://i.ibb.co/FX2YRpv/skills.jpg" class="skill fluid" />
+      <div class="technical">
+        <h4>Technical Skills:</h4>
+        <ul style="list-style: none; margin: 0; padding: 0">
+          <li>Figma</li>
+          <li>Canva</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Vue.js</li>
+          <li>MySQL</li>
+          <li>Node.js</li>
+        </ul>
       </div>
     </div>
     <h3>Volunteer Experience:</h3>
@@ -88,7 +118,7 @@
         </div>
       </div>
       <img
-        src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS1tnRyTKo9R17E-1rhgqL4o6JVezI5bUgfWjMx2xideFx_ep2O3kMiiDYHKcacVZo_YwQeRbG4dH8MZTj6gH5TIKfkzQ=s1600"
+        src="https://i.ibb.co/VvCf6nK/volunteer-01.jpg"
         class="experience fluid"
       />
     </div>
@@ -139,7 +169,10 @@ export default {
 .work-experience:hover {
   border: 10px var(--secondary) ridge;
 }
-
+.work-experience-container {
+  display: flex;
+  place-content: center space-around;
+}
 .experience img {
   height: 450px;
   width: 450px;
@@ -148,6 +181,14 @@ export default {
 }
 .experience img:hover {
   border: 5px var(--text) ridge;
+}
+
+.experience.row2 {
+  border: 10px var(--text) groove;
+  padding: 10px;
+}
+.experience.row2:hover {
+  border: 10px var(--secondary) groove;
 }
 
 .experience-volunteer {
@@ -159,12 +200,50 @@ export default {
 
 .experience-volunteer-1,
 .experience-volunteer-2 {
-  border: 2px var(--background) solid;
+  border: 5px var(--text) ridge;
+  margin: 10px;
+}
+:is(.experience-volunteer-1, .experience-volunteer-2):hover {
+  border: 5px var(--secondary) ridge;
   margin: 10px;
 }
 
 .skills-flex {
   display: flex;
   justify-content: space-evenly;
+}
+
+.skills {
+  border: 10px var(--text) groove;
+  display: flex;
+  place-content: center space-evenly;
+  text-align: center;
+}
+.soft,
+.technical {
+  width: 500px;
+}
+.skills:hover {
+  border: 10px var(--secondary) groove;
+}
+
+.skill {
+  margin: auto 0;
+  width: 450px;
+  height: 300px;
+  border: 5px var(--secondary) groove;
+}
+
+.skill:hover {
+  margin: auto 0;
+  width: 450px;
+  height: 300px;
+  border: 5px var(--text) groove;
+}
+.studio {
+  border: 5px var(--secondary) groove;
+}
+.studio:hover {
+  border: 5px var(--text) groove;
 }
 </style>

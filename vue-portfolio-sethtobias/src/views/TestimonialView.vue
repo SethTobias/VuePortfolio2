@@ -42,7 +42,6 @@
               <div class="card2 description">
                 <div class="card2 description-collapsed">
                   <div class="card2 description-collapsed-content">
-
                     <p>Taryn-lee Walbrugh</p>
                   </div>
                   <div class="card2 description-collapsed-content">
@@ -104,7 +103,7 @@
                 <div class="card4 description-collapsed-content">
                   <p>Ntokozo Sithebe</p>
                 </div>
-                
+
                 <div class="card4 description-collapsed-content">
                   <p>Colleague</p>
                 </div>
@@ -144,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="card6 testimonial-card">
+          <!-- <div class="card6 testimonial-card">
             <div class="card6 container-grid">
               <div class="card6 img-container">
                 <img
@@ -164,7 +163,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="carousel-item-indicator next" @click="nextItem(1)">
@@ -283,6 +282,7 @@ export default {
 .testimonial-container {
   margin: 0 auto;
   width: 1250px;
+  margin-bottom: 25px;
 }
 
 h2 {
@@ -364,7 +364,6 @@ h2 {
   text-align: center;
   /* padding: 0 25px; */
   font-size: 20px;
-
 }
 .testimonial-items1 .description-expanded,
 .testimonial-items2 .description-expanded {
