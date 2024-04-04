@@ -2,65 +2,70 @@
   <div class="projects-main-container">
     <h2>Projects:</h2>
     <div class="projects-container-grid">
-      <div class="projects project-1" @click="modalAppear()">
-        <p>Projects Name</p>
-        <p>Languages Used</p>
+            <div class="projects project-1" @click="flipCard(1)">
+        <div class="front">
+          <p>Time Converter</p>
+          <p>HTML,CSS,JavaScript</p>
+        </div>
+        <div class="back">
+          <p>This was one of the very first JavaScript projects I was assigned. It was a simple time converter to go from minutes to seconds. Overtime however I improved the functionality and overall styling of the project to the current point it is at now. It taught me the basics of DOM manipulation and the basics of how operators in JavaScript work.</p>
+          <div class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+       </div>
       </div>
-      <div class="projects project-2" @click="modalAppear()">
-        <p>Projects Name</p>
-        <p>Languages Used</p>
+           <div class="projects project-2" @click="flipCard(2)">
+        <div class="front">
+          <p>Literary Haven</p>
+          <p>HTML,CSS,JavaScript</p>
+        </div>
+        <div class="back">
+          <p>This was my very first project where I fully used JavaScript to implement a CRUD system into my project in order to create a very simple e-commerce website. This project really made clear to me the under lying issues of my lack of understanding of JavaScript. Thanks to this I took more time in order to understand the language more.</p>
+          <div class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
       </div>
-      <div class="projects project-3" @click="modalAppear()">
-        <p>Projects Name</p>
-        <p>Languages Used</p>
+            <div class="projects project-3" @click="flipCard(3)">
+        <div class="front">
+          <p>Vroom Vroom Motors</p>
+          <p>HTML,CSS,JavaScript,SQL</p>
+        </div>
+        <div class="back">
+          <p>This was the very first project I completed while working with another developer. The project highlighted the importance of effective communication. We were also tasked for the first time to work with a database through the use of MySQL and the use of Node.js in order to effectively communicate with the database.</p>
+          <div class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
       </div>
-      <div class="projects project-4" @click="modalAppear()">
-        <p>Projects Name</p>
-        <p>Languages Used</p>
+            <div class="projects project-4" @click="flipCard(4)">
+        <div class="front">
+          <p>Literary Connect</p>
+          <p>HTML,CSS,JavaScript,SQL</p>
+        </div>
+        <div class="back">
+          <p>Through this project I completed my first full scale Full-stack application/website. I completed a social media website where I implemented the basic functionality.</p>
+          <div class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="projects-modal">
-      <div class="projects-modal-content">
-        <h2 class="close-contain">
-          <span class="close" @click="modalClose()">Close </span>
-        </h2>
-        <div>
-          <h3>Project Name:</h3>
-          <p>Placeholder</p>
-        </div>
-        <div>
-          <h3>Description:</h3>
-          <p>Placeholder</p>
-        </div>
-        <div>
-          <h3>Languages used:</h3>
-          <p>Placeholder</p>
-        </div>
-        <div>
-          <h3>Used Frameworks:</h3>
-          <p>Placeholder</p>
-        </div>
-        <div>
-          <h3>Links</h3>
-          <div>Placeholder</div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 </template>
 
 <script>
 export default {
   methods: {
-    modalAppear() {
-      const modal = document.querySelector(".projects-modal");
-      modal.style.display = "block";
-    },
-    modalClose() {
-      const modal = document.querySelector(".projects-modal");
-      modal.style.display = "none";
-    },
-  },
+    flipCard(index) {
+      const card = document.querySelector(`.projects.project-${index}`);
+      card.classList.toggle('flipped');
+    }
+  }
 };
 </script>
 
@@ -85,70 +90,60 @@ h2 {
 }
 
 .projects-container-grid {
-  width: auto;
-  height: 400px;
+  width: 1000px;
+  height: 700px;
   display: flex;
-  place-content: center space-evenly;
+  place-content: space-between space-evenly;
+  flex-wrap: wrap;
 }
 
 .projects {
   background-color: var(--secondary);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 80%;
-  height: 50%;
+  filter: blur(2.5px);
+  
+   perspective: 1000px;
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 300px;
   border: 10px outset var(--text);
+  cursor: pointer;
 }
 
 .projects:hover {
   border: 10px inset var(--accent);
   box-shadow: 5px 5px 10px var(--text);
-}
-
-.projects p {
-  filter: blur(5px);
-}
-
-.projects p:hover {
   filter: blur(0px);
 }
 
-.projects-modal {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.projects-modal-content {
-  background-color: #fefefe;
-  border: 5px solid var(--text);
-  border-radius: 5px;
-  margin: 15% auto;
-  padding: 20px;
-  background-color: var(--accent);
-
-  background-size: cover;
-  width: 80%;
-  color: var(--background);
+.projects .front,
+.projects .back {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  z-index: 1;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
 }
 
-.projects-modal-content .close-contain {
-  margin: 0;
-  line-height: 10px;
+.projects .front {
+  background-color: #5cd1ff;
 }
+
+.projects .back {
+  background-color: #008a70;
+  transform: rotateY(180deg);
+}
+
+.projects.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.projects.flipped .back {
+  transform: rotateY(0deg);
+}
+
 </style>
+
