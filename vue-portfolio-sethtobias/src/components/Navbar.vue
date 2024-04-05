@@ -21,7 +21,7 @@
           </div>
           <div class="link-items two">
             <router-link to="/experience">Experience</router-link>
-            <router-link to="/testimonial">Testimonial</router-link>
+            <router-link to="/testimonial">References</router-link>
             <router-link to="/contact">Contact</router-link>
           </div>
         </div>
@@ -100,6 +100,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-icon {
@@ -158,33 +159,34 @@ nav a.router-link-exact-active {
   align-self: center;
 }
 
-@media screen and (width < 301px) {
-  nav {
-  margin-bottom: 25px;
-}
+@media screen and (max-width: 300px) {
 .nav-container {
   max-width: 300px;
   width: 100%;
+  place-content: center;
 }
 
 .nav-icon {
   margin: auto 0;
   justify-self: end;
-  transform: scale(.5);
+  transform: scale(.75);
 }
 .nav-link {
   align-self: center;
   justify-self: start;
   display: flex;
-  transform: scale(.8);
+
+  transform: scale(.75);
 }
-.link-items.two{
-  display: none;
+
+.link-items a {
+  font-size: .75rem;
 }
+
 
 .link-items.one a,
 .link-items.two a {
-  margin: 0 0.5px;
+  margin: 0 2.5px;
 }
 .nav-settings {
   margin: auto;

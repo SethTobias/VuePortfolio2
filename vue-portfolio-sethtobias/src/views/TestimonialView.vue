@@ -1,5 +1,6 @@
 <template>
   <div class="testimonial-container">
+    <h2>Peer Reviews:</h2>
     <div class="nav-container">
       <div class="carousel-item-indicator previous" @click="nextItem(-1)">
         <i
@@ -37,7 +38,7 @@
           <div class="card2 testimonial-card">
             <div class="card2 container-grid">
               <div class="card2 img-container">
-                <img src="" alt="" />
+                <img src="https://i.ibb.co/k1LTXzd/taren.jpg" alt="" />
               </div>
               <div class="card2 description">
                 <div class="card2 description-collapsed">
@@ -99,15 +100,16 @@
                   alt=""
                 />
               </div>
-              <div class="card4 description">
-                <div class="card4 description-collapsed-content">
-                  <p>Ntokozo Sithebe</p>
+              <div class="card5 description">
+                <div class="card5 description-collapsed">
+                  <div class="card5 description-collapsed-content">
+                    <p>Ntokozo Sithebe</p>
+                  </div>
+                  <div class="card5 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
                 </div>
-
-                <div class="card4 description-collapsed-content">
-                  <p>Colleague</p>
-                </div>
-                <div class="card4 description-expanded">
+                <div class="card5 description-expanded">
                   <p>
                     Seth is a very enthusiastic about life. Everything he talks
                     about has life or character. He is like a sunflower, always
@@ -125,14 +127,17 @@
                   alt=""
                 />
               </div>
-              <div class="card5 description">
-                <div class="card5 description-collapsed-content">
-                  <p>Naeema Omar</p>
+
+              <div class="card4 description">
+                <div class="card4 description-collapsed">
+                  <div class="card4 description-collapsed-content">
+                    <p>Naeema Omar</p>
+                  </div>
+                  <div class="card4 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
                 </div>
-                <div class="card5 description-collapsed-content">
-                  <p>Colleague</p>
-                </div>
-                <div class="card5 description-expanded">
+                <div class="card4 description-expanded">
                   <p>
                     Seth Tobias always brings great energy to the team. He has
                     solid attention to detail which is why he is often
@@ -210,8 +215,15 @@ export default {
   },
 };
 </script>
-
 <style scoped>
+:root {
+  --text: #002e28;
+  --background: #e0fffa;
+  --primary: #008a70;
+  --secondary: #5cd1ff;
+  --accent: #007cf0;
+}
+
 * {
   color: var(--text);
 }
@@ -223,22 +235,19 @@ export default {
 .carousel-item {
   display: none;
 }
+
+.testimonial-container {
+  margin: 0 auto;
+  width: 1250px;
+  margin-bottom: 25px;
+}
+
 .carousel-item-indicators {
   cursor: pointer;
   position: absolute;
   display: flex;
   place-content: center space-evenly;
-
   user-select: none;
-}
-.carousel-item-caption {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 .carousel-item-indicator.previous,
 .carousel-item-indicator.next {
@@ -269,25 +278,11 @@ export default {
   width: 1250px;
   min-width: 250px;
 }
-</style>
-<style scoped>
-:root {
-  --text: #002e28;
-  --background: #e0fffa;
-  --primary: #008a70;
-  --secondary: #5cd1ff;
-  --accent: #007cf0;
-}
-
-.testimonial-container {
-  margin: 0 auto;
-  width: 1250px;
-  margin-bottom: 25px;
-}
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  color: var(--secondary);
 }
 
 .testimonial-card {
@@ -353,7 +348,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 .description-collapsed-content {
@@ -363,7 +358,7 @@ h2 {
 .description-expanded {
   text-align: center;
   /* padding: 0 25px; */
-  font-size: 20px;
+  font-size: 1rem;
 }
 .testimonial-items1 .description-expanded,
 .testimonial-items2 .description-expanded {
@@ -381,56 +376,20 @@ h2 {
   background-color: var(--primary);
 }
 
-.testimonial-items2 .description {
-  grid-area: description;
-  background-color: var(--secondary);
-  text-align: center;
-  padding: 0 25px;
-}
-
-.testimonial-items2 .description-expanded {
-  display: block;
-}
-
-@media screen and (width < 301px) {
+@media screen and (max-width: 300px) {
   .carousel-main-container {
     width: 300px;
-    position: relative;
-    margin: 0 auto;
   }
   .carousel-item {
     display: none;
   }
-  .carousel-item-indicators {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
+  .carousel-item-indicators.next,
+  .carousel-item-indicators.previous {
+    width: 25px;
   }
-  .carousel-item-caption {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    text-align: center;
-  }
-  .carousel-item-indicator.previous,
-  .carousel-item-indicator.next {
-    cursor: pointer;
-    z-index: 1;
-    align-content: center;
-  }
-  .carousel-item-index {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .nav-container {
-    margin: 0 auto;
-    justify-content: center;
+  .carousel-item-indicator.next i,
+  .carousel-item-indicator.previous i {
+    font-size: 25px;
   }
 
   .link-items-testimonial.two {
@@ -446,84 +405,46 @@ h2 {
 
   .testimonial-container {
     margin: 0 auto;
-    width: 300px;
+    width: 250px;
   }
 
   h2 {
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.5rem;
   }
 
   .testimonial-card {
     background-color: var(--secondary);
     height: fit-content;
     width: fit-content;
-    border: 5px solid var(--accent);
     margin: 10px auto;
   }
   .link-items-testimonial.one .testimonial-items1,
   .link-items-testimonial.two .testimonial-items2 {
     /* grid-area: 1/1/2/2; */
-    width: 300px;
+    width: 250px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
 
   .container-grid {
-    height: 400px;
-    width: 250px;
-    display: grid;
-    grid: "img" 75% "description" 25% / 1fr;
-  }
-
-  .testimonial-items1 .container-grid:hover,
-  .testimonial-items2 .container-grid:hover {
-    animation: cardExpand 1s forwards;
-  }
-
-  @keyframes cardExpand {
-    0% {
-      grid: "img" 75% "description" 25% / 1fr;
-    }
-
-    100% {
-      grid: "img" 0% "description" 100% / 1fr;
-    }
-  }
-
-  .img-container {
-    grid-area: img;
-  }
-
-  .img-container img {
-    width: 100%;
-    height: 100%;
+    height: 250px;
+    width: 200px;
   }
 
   .testimonial-items1 .description,
   .testimonial-items2 .description {
-    font-size: 16px;
+    font-size: 0.75rem;
   }
 
   .description-expanded {
-    text-align: center;
-    padding: 0 10px;
-    font-size: 16px;
+    font-size: 0.7rem;
   }
 
   .testimonial-items2 {
     flex-flow: column;
     justify-content: space-evenly;
     margin: 10px auto;
-  }
-
-  .testimonial-items2 .description {
-    padding: 0 10px;
-  }
-
-  .testimonial-items2 .description-expanded {
-    display: block;
   }
 }
 </style>

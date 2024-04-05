@@ -1,6 +1,6 @@
 <template>
-  <h2>Education & Experience:</h2>
   <div class="experience-container">
+  <h2>Education & Experience:</h2>
     <div class="education">
       <h3>Education (2018-2022)</h3>
       <div class="experience row1">
@@ -9,7 +9,7 @@
           class="experience fluid"
         />
         <div class="experience-education">
-          <p style="width: 600px">
+          <p>
             I attended Table View Highschool for 5 years,here I completed my NSC
             qualification. Having acheived a Bachelors Pass. My subjects
             consisted of English HL, Afrikaans FAL, Mathematics, Life
@@ -32,7 +32,7 @@
       <h3>Life Choices Academey (September 2023- March 2024)</h3>
       <div class="experience row1">
         <div class="experience-education">
-          <p style="width: 600px">
+          <p>
             I had the privilege to participate in a rigorous six-month
             Full-Stack Web Development Course at Life Choices Academy. Over the
             duration of the program, the initial three months were dedicated to
@@ -59,7 +59,7 @@
       <h4>LC Studios: (April 2024-Current)</h4>
       <div class="work-experience-container">
         <div class="txt">
-          <p style="width: 600px">
+          <p>
             Having completed an intensive six-month Full-stack Web Development
             course, equipping me with comprehensive skills in both front-end and
             back-end web development. Building upon this foundation, I have
@@ -124,11 +124,13 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "ExperienceView",
 };
 </script>
+
 <style scoped>
 :root {
   --text: #002e28;
@@ -142,6 +144,11 @@ export default {
   font-size: 30px;
   text-align: center;
 }
+
+:where(.experience-education,.txt) p {
+  width: 600px;
+}
+
 .experience-container {
   margin: 0 auto;
   width: 1250px;
@@ -245,5 +252,88 @@ export default {
 }
 .studio:hover {
   border: 5px var(--text) groove;
+}
+
+@media screen and (max-width: 300px) {
+  :root {
+  --text: #002e28;
+  --background: #e0fffa;
+  --primary: #008a70;
+  --secondary: #5cd1ff;
+  --accent: #007cf0;
+}
+
+* {
+  font-size: 1rem;
+}
+
+p,li {
+  font-size:.75rem;
+}
+
+:where(.experience-education,.txt) p {
+  width: 200px;
+}
+
+.experience-container {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.experience-education p{
+  margin: 0 auto;
+}
+
+
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+}
+.work-experience-container p{
+ margin: 0 auto;
+}
+.experience img {
+  height: 200px;
+  width: 200px;
+  border: 5px var(--secondary) groove;
+  margin: 0 auto;
+}
+
+.experience-volunteer {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.skills-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  text-align: center;
+}
+.soft,
+.technical {
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+.skill {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+}
 }
 </style>

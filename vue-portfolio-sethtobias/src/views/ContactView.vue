@@ -82,7 +82,6 @@ export default {
     "intro intro img" 200px
     "form form img" 150px
     "social social social" 150px / 1fr 1fr 1fr;
-  
 }
 
 .intro {
@@ -119,7 +118,7 @@ export default {
 
 ::placeholder {
   color: var(--secondary);
-  text-align: center; 
+  text-align: center;
 }
 
 img {
@@ -155,10 +154,90 @@ img:hover {
   transition: all 0.75s ease-in-out;
 }
 
-:is(.intro, .form-info,.form,.social-container) :where(.header) {
+:is(.intro, .form-info, .form, .social-container) :where(.header) {
   font-size: 2rem;
 }
 :is(.intro, .form-info) :where(.txt) {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 300px) {
+  :root {
+    --text: #002e28;
+    --background: #e0fffa;
+    --primary: #008a70;
+    --secondary: #5cd1ff;
+    --accent: #007cf0;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .main-container {
+    width: 250px;
+    margin: 0 auto;
+    display: grid;
+    grid:
+      "intro" 250px
+      "img" 280px
+      "form" 250px
+      "social" 250px / 250px;
+    place-items: center;
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .form-info {
+    grid-area: form-info;
+  }
+
+  .form {
+    grid-area: form;
+  }
+
+  .personal-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  :is(.form) form {
+    display: flex;
+    place-content: center space-evenly;
+    text-align: center;
+  }
+
+  img {
+    grid-area: img;
+    max-width: 200px;
+    width: auto;
+  }
+
+  .icon-container {
+    display: flex;
+    place-content: center space-evenly;
+  }
+
+  .icon-container i {
+    transform: scale(1.25);
+  }
+
+  .icon-container i:hover {
+    transform: scale(1.5);
+    transition: all 0.75s ease-in-out;
+  }
+
+  .social-container {
+    margin: auto;
+  }
+
+  :is(.intro, .form-info, .form, .social-container) :where(.header) {
+    font-size: 1.25rem;
+  }
+  :is(.intro, .form-info) :where(.txt) {
+    font-size: 0.75rem;
+  }
 }
 </style>

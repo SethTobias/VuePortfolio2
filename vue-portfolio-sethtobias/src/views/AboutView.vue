@@ -329,7 +329,7 @@
     </a>
     <div class="music-container">
       <div class="music">
-        <h3>Music:</h3>
+        <h2>Music:</h2>
         <p class="music txt">
           I always enjoyed listening to music and singing along to my favourite
           songs. As we all do. My love for music only really started when I
@@ -350,7 +350,7 @@
         ></iframe>
       </div>
       <div class="gaming-container">
-        <h3>Gaming:</h3>
+        <h2>Gaming:</h2>
         <p class="gaming txt">
           Gaming, for me, was a hobby I really enjoyed, as it allowed me to
           escape into a whole new world where there were no restrictions
@@ -374,7 +374,7 @@
             target="blank"
             >Grid Attack</a
           >
-          . Which teach the basics go Flexbox and Grid respectively.
+          . Which teach the basics of Flexbox and Grid respectively.
         </p>
       </div>
     </div>
@@ -389,7 +389,7 @@ export default {
       const today = new Date();
       const birthday = new Date("2004-05-27");
       const currentAge = ` ${Math.floor(
-        (today - birthday) / (1000 * 60 * 60 * 24) / 365
+        (today - birthday) / (1000 * 60 * 60 * 24) / 365.25
       )} `;
       return currentAge;
     },
@@ -437,16 +437,24 @@ export default {
   min-width: 250px;
 }
 
-.main-container h1 {
+ h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5rem;
   color: var(--secondary);
 }
 
-.main-container h2 {
+ h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 2rem;
   color: var(--secondary);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+ 
+p {
+  font-size: 1.5rem;
 }
 
 .fluid {
@@ -476,13 +484,8 @@ export default {
 
 .story-content h2,
 .story-content h3 {
-  font-size: 40px;
   margin-top: 0;
   color: var(--secondary);
-}
-
-.story-content p {
-  font-size: 30px;
 }
 
 .image-map-container {
@@ -493,7 +496,6 @@ export default {
 }
 .image-map-container h2 {
   text-align: center;
-  font-size: 40px;
   margin-bottom: 0;
 }
 .image-map-container p {
@@ -502,7 +504,6 @@ export default {
   max-width: 800px;
   min-width: 250px;
   width: auto;
-  font-size: 30px;
 }
 .image-map-container img {
   border: 10px groove var(--text);
@@ -633,7 +634,6 @@ export default {
 .txt-end-start {
   grid-area: 1/2/2/3;
   text-align: end;
-  font-size: 30px;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -642,16 +642,10 @@ export default {
 .txt-center-end {
   grid-area: 2/1/3/2;
   text-align: center;
-  font-size: 30px;
   display: flex;
   align-items: center;
   justify-items: center;
   text-align: center;
-}
-
-h2 {
-  text-align: center;
-  font-size: 40px;
 }
 .stitch {
   border: 10px groove var(--text);
@@ -673,17 +667,14 @@ h2 {
 
 .reading-container h2 {
   text-align: center;
-  font-size: 30px;
 }
 
 .reading-container h3 {
   text-align: center;
-  font-size: 24px;
 }
 
 .reading-container p {
   text-align: center;
-  font-size: 24px;
 }
 
 .reads-container {
@@ -718,7 +709,8 @@ h2 {
 }
 
 :is(.music,.gaming-container) {
-  width: 600px;
+  max-width: 600px;
+  min-width: 250px;
 }
 
 .gaming-container{
@@ -733,11 +725,9 @@ h2 {
 }
 .music-container h2 {
   text-align: center;
-  font-size: 30px;
 }
 
 .music-text {
-  font-size: 24px;
   text-align: center;
 }
 iframe {
@@ -757,7 +747,6 @@ iframe:hover {
   margin: 0 auto;
 }
 .txt-movies {
-  font-size: 30px;
   text-align: center;
 }
 
@@ -771,10 +760,27 @@ iframe:hover {
 }
 
 @media screen and (max-width: 300px) {
-  .main-container h2 {
-    text-align: center;
-    font-size: 20px;
-  }
+
+  h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+ h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+h3 {
+  font-size: 1rem;
+}
+ 
+p {
+  font-size: 1rem;
+}
+
 
   .fluid {
     width: 100%;
@@ -787,21 +793,6 @@ iframe:hover {
     margin: 0 auto;
   }
 
-  .story-content h2 {
-    font-size: 18px;
-  }
-
-  .story-content p {
-    font-size: 16px;
-  }
-
-  .image-map-container p {
-    font-size: 18px;
-  }
-
-  .sport-container-grid {
-    font-size: 18px;
-  }
   .sport-container-grid {
     margin: 0 auto;
     max-width: 250px;
@@ -829,14 +820,12 @@ iframe:hover {
 
   .txt-end-start {
     order: 2;
-    font-size: 16px;
     height: auto;
     max-width: 250px;
     width: auto;
   }
 
   .txt-center-end {
-    font-size: 16px;
     order: 4;
     height: auto;
     max-width: 250px;
@@ -854,7 +843,6 @@ iframe:hover {
     order: 1;
   }
   .txt-movies {
-    font-size: 18px;
     text-align: center;
     order: 2;
   }

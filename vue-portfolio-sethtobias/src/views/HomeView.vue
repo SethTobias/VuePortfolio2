@@ -90,8 +90,19 @@ export default {
   flex-flow: column nowrap;
   justify-content: space-between;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5rem;
   color: var(--secondary);
+}
+
+@media screen and (max-width: 300px) {
+  .intro-content {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro.fluid {
+  max-width: 200px;
+}
 }
 
 /* .sub-container {
@@ -222,15 +233,4 @@ max-height: 50px;
 text-align: center;
 margin: 5px 40px;
 } */
-
-@media screen and (max-width: 300px) {
-  .intro-content {
-    font-size: 18px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .intro.fluid {
-  max-width: 200px;
-}
-}
 </style>

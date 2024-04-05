@@ -27,8 +27,11 @@ body {
   --primary: #008a70;
   --secondary: #5cd1ff;
   --accent: #007cf0;
+  --typography: "Eagle Lake", serif;
 }
-
+* {
+  font-family: var(--typography);
+}
 nav {
   padding: 30px;
 }
