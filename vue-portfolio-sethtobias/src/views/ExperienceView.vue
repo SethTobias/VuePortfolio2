@@ -2,6 +2,30 @@
   <div class="experience-container">
   <h2>Education & Experience:</h2>
     <div class="education">
+  <h3>Life Choices Academey (September 2023- March 2024)</h3>
+      <div class="experience row1">
+        <div class="experience-education">
+          <p>
+            I had the privilege to participate in a rigorous six-month
+            Full-Stack Web Development Course at Life Choices Academy. Over the
+            duration of the program, the initial three months were dedicated to
+            foundational learning, where I gained proficiency in essential tools
+            such as Figma for design, alongside acquiring fundamental skills in
+            HTML, CSS, and JavaScript. This phase provided a solid groundwork
+            for my journey as a Web Developer. Subsequently, the latter half of
+            the course focused on advanced topics, including database management
+            utilizing SQL. Moreover, I expanded my repertoire by delving into
+            technologies such as Vue.js and Node.js. This comprehensive
+            curriculum not only broadened my technical expertise but also
+            equipped me with the versatility to adapt to dynamic industry
+            demands.
+          </p>
+        </div>
+        <img
+          src="https://i.ibb.co/JqBR6td/graduation.jpg"
+          class="experience fluid"
+        />
+      </div>
       <h3>Education (2018-2022)</h3>
       <div class="experience row1">
         <img
@@ -29,30 +53,7 @@
           </div>
         </div>
       </div>
-      <h3>Life Choices Academey (September 2023- March 2024)</h3>
-      <div class="experience row1">
-        <div class="experience-education">
-          <p>
-            I had the privilege to participate in a rigorous six-month
-            Full-Stack Web Development Course at Life Choices Academy. Over the
-            duration of the program, the initial three months were dedicated to
-            foundational learning, where I gained proficiency in essential tools
-            such as Figma for design, alongside acquiring fundamental skills in
-            HTML, CSS, and JavaScript. This phase provided a solid groundwork
-            for my journey as a Web Developer. Subsequently, the latter half of
-            the course focused on advanced topics, including database management
-            utilizing SQL. Moreover, I expanded my repertoire by delving into
-            technologies such as Vue.js and Node.js. This comprehensive
-            curriculum not only broadened my technical expertise but also
-            equipped me with the versatility to adapt to dynamic industry
-            demands.
-          </p>
-        </div>
-        <img
-          src="https://i.ibb.co/JqBR6td/graduation.jpg"
-          class="experience fluid"
-        />
-      </div>
+
     </div>
     <h3>Work Experience:</h3>
     <div class="work-experience">

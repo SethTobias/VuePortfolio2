@@ -38,12 +38,13 @@
           <div class="card2 testimonial-card">
             <div class="card2 container-grid">
               <div class="card2 img-container">
-                <img src="https://i.ibb.co/k1LTXzd/taren.jpg" alt="" />
+                <img src="https://i.ibb.co/KKWZB9V/veronique.jpg" alt="" />
               </div>
               <div class="card2 description">
                 <div class="card2 description-collapsed">
                   <div class="card2 description-collapsed-content">
-                    <p>Taryn-lee Walbrugh</p>
+                    <p>Veronique Nappie
+</p>
                   </div>
                   <div class="card2 description-collapsed-content">
                     <p>Colleague</p>
