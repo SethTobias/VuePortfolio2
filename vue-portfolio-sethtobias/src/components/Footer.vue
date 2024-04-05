@@ -5,9 +5,9 @@
     <p>
     <div class="end-icons">
       <span class="currentYear">{{ getCurrentYear() }}</span>
-      <i class="fa-brands fa-github fa-2xl"></i>
+      <!-- <i class="fa-brands fa-github fa-2xl"></i>
       <i class="fa-brands fa-linkedin fa-2xl"></i>
-      <i class="fa-solid fa-fire fa-2xl"></i>
+      <i class="fa-solid fa-fire fa-2xl"></i> -->
     </div>
     </p>
   </footer>
@@ -21,8 +21,10 @@ export default {
   },
   methods: {
     getCurrentYear() {
+      const currentMonth = new Date().toLocaleString('default', {month: 'long'} );
       const currentYear = new Date().getFullYear();
-      return currentYear;
+      const currentDate = `${currentMonth} ${currentYear}`;
+      return currentDate;
     },
   },
 };
@@ -46,7 +48,6 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 100px;;
 }
 
 p {
@@ -62,12 +63,7 @@ p {
 .end-icons {
   justify-self: end;
   align-self: center;
-  display: flex;
-  flex-flow: row;
-  align-content: center;
-  justify-content: space-evenly;
   text-align: center;
-  width: 20%;
   color: var(--text);
 }
 

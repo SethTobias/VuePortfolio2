@@ -1,19 +1,19 @@
 <template>
-<div class="main-container">
-<div class="intro-container">
-<div class="intro-img">
-<img
-src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQOaEOcG2XSy5xi6W1b0C3DXLH99AyX9wrRIR_9wAxoe4IXAeNjibAQsYXK2gdj-BTwPtW6t_rB8niTyqKmaZP1bo8OoA=s1600"
-class="intro fluid"
-/>
-</div>
-<div class="intro-content">
-<p>I am Seth Tobias.</p>
-<p>An Aspiring Developer.</p>
-<p>Based in Tableview, CapeTown.</p>
-</div>
-</div>
-<!-- <div class="sub-container">
+  <div class="main-container">
+    <div class="intro-container">
+      <div class="intro-img">
+        <img
+          src="https://i.ibb.co/m42qft3/LC-Headshot2.jpg"
+          class="intro fluid"
+        />
+      </div>
+      <div class="intro-content">
+        <p>I am Seth Tobias.</p>
+        <p>An Aspiring Developer.</p>
+        <p>Based in Tableview, CapeTown.</p>
+      </div>
+    </div>
+    <!-- <div class="sub-container">
 <div class="recent-container">
 <h1>
 My Recent Project:
@@ -47,53 +47,64 @@ class="fluid cv"/>
 </div>
 </div>
 </div> -->
-</div>
+  </div>
 </template>
 <script>
 export default {
-name: 'HomeView'
-}
+  name: "HomeView",
+};
 </script>
 <style scoped>
 :root {
---text: #002e28;
---background: #e0fffa;
---primary: #008a70;
---secondary: #5cd1ff;
---accent: #007cf0;
+  --text: #002e28;
+  --background: #e0fffa;
+  --primary: #008a70;
+  --secondary: #5cd1ff;
+  --accent: #007cf0;
 }
 .main-container {
-min-width: 250px;
-width: auto;
-max-width: 1250px;
-margin: 0 auto;
+  min-width: 250px;
+  width: auto;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 .intro-container {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.intro-img {
+    margin: 0 auto;
 }
 .intro.fluid {
-max-width: 500px;
-border: 5px solid var(--secondary);
+  max-width: 400px;
+  border: 10px groove var(--text);
+}
+.intro.fluid:hover {
+  max-width: 400px;
+  border: 10px ridge var(--secondary);
 }
 .intro-content {
-display: flex;
-flex-flow: column nowrap;
-justify-content: space-between;
-text-align: center;
-font-size: 50px;
-color: var(--secondary);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--secondary);
 }
 
-@media screen and (width < 300px) {
-.intro-content {
-font-size: 18px;
-margin: 0 auto;
-text-align: center;
+@media screen and (max-width: 300px) {
+  .intro-content {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro.fluid {
+  max-width: 200px;
 }
 }
+
 /* .sub-container {
 min-width: 250px;
 width: auto;
